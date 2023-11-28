@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box:hover{
+            transform: scale(1.1);
+        }
+        .box{
+            transition: transform .2s linear 0s;
+            border: 2px solid gray;
+            width: 200px;
+            height: 200px;
+            box-shadow: 0 0 8px 8px gray;
+        }
+        .parent{
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+    </style>
+</head>
+<body>
+    <div class="parent">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>
+</body>
+</html>
